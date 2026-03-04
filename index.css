@@ -14,10 +14,12 @@ body {
 /* 2. The Apple-style Rounded Box */
 .apple-box {
     background-color: var(--card-bg);
-    /* Apple uses a 'squircle' effect; 28px-32px is the sweet spot for cards */
     border-radius: 28px; 
-    padding: 30px;
+    padding: 30px 48px;
+    max-width: 9000px;
     width: 100%;
+    margin: 12px auto;
+    box-sizing: border-box;
     text-align: center;
     
     /* 3. Subtle depth instead of a heavy border */
@@ -26,7 +28,6 @@ body {
     /* 4. Smooth Interaction */
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
     cursor: pointer;
-    margin: 12px;
 }
 
 .apple-box:hover {
