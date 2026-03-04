@@ -92,3 +92,17 @@ body {
   border: 1px solid rgba(255,255,255,0.08);
 }
 
+#title-color-btn{
+    margin-top: 12px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    background: #efefef;
+    color: var(--text);
+    cursor: pointer;
+}
+.dark-theme #title-color-btn{
+    background: #2b2b2d;
+    color: var(--text);
+}
+

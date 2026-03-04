@@ -46,5 +46,17 @@ if(themeButton){
     });
 }
 
+// Title color changer
+const title = document.querySelector('.apple-box h1');
+const colorBtn = document.getElementById('title-color-btn');
+const colors = ['#ff3b30','#ff9500','#ffcc00','#34c759','#007aff','#5856d6','#ff2d55'];
+let colorIndex = 0;
+if (colorBtn && title) {
+    colorBtn.addEventListener('click', () => {
+        title.style.color = colors[colorIndex];
+        colorIndex = (colorIndex + 1) % colors.length;
+    });
+}
+
 
 
